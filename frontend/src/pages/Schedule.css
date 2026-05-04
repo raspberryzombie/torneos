@@ -1,0 +1,266 @@
+.schedule-container {
+  min-height: 100vh;
+  background-color: #0D0D0D;
+  padding: 20px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+}
+
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.schedule-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.profile-link {
+  text-decoration: none;
+}
+
+.user-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #00D4AA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-avatar span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0D0D0D;
+}
+
+.schedule-section {
+  margin-bottom: 32px;
+}
+
+.schedule-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 16px;
+}
+
+.loading {
+  text-align: center;
+  color: #6A6A6A;
+  padding: 40px;
+}
+
+.empty-state {
+  background: #1A1A1A;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+}
+
+.empty-state p {
+  color: #9A9A9A;
+  margin: 0;
+  font-size: 16px;
+}
+
+.empty-link {
+  color: #00D4AA;
+  font-size: 14px;
+  margin-top: 8px;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.matches-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.match-card {
+  background: #1A1A1A;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.match-opponent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.match-opponent .vs {
+  color: #6A6A6A;
+  font-size: 14px;
+}
+
+.match-opponent .opponent-name {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.match-details {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.match-time {
+  color: #00D4AA;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.match-court {
+  color: #9A9A9A;
+  font-size: 14px;
+}
+
+.match-status {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.match-status.status-scheduled {
+  background: rgba(106, 106, 106, 0.2);
+  color: #9A9A9A;
+}
+
+.match-status.status-active {
+  background: rgba(0, 212, 170, 0.2);
+  color: #00D4AA;
+}
+
+.match-status.status-completed {
+  background: rgba(0, 212, 170, 0.1);
+  color: #00D4AA;
+}
+
+.match-status.status-cancelled {
+  background: rgba(255, 82, 82, 0.2);
+  color: #FF5252;
+}
+
+.match-status.status-pending {
+  background: rgba(0, 212, 170, 0.2);
+  color: #00D4AA;
+}
+
+.match-status.status-disputed {
+  background: rgba(255, 152, 0, 0.2);
+  color: #FF9800;
+}
+
+.match-tournament {
+  color: #6A6A6A;
+  font-size: 12px;
+}
+
+.btn-report-score {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  background: #2A2A2A;
+  color: #00D4AA;
+  border: 1px solid #00D4AA;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-report-score:hover {
+  background: rgba(0, 212, 170, 0.1);
+}
+
+.registrations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.registration-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1A1A1A;
+  border-radius: 12px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.registration-card:hover {
+  background: #222222;
+}
+
+.reg-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reg-name {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.reg-venue {
+  color: #6A6A6A;
+  font-size: 12px;
+}
+
+.reg-date {
+  color: #00D4AA;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  background: #1A1A1A;
+  border-top: 1px solid #2A2A2A;
+  padding: 12px 0;
+  padding-bottom: env(safe-area-inset-bottom, 12px);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: #6A6A6A;
+  font-size: 12px;
+  transition: color 0.2s;
+}
+
+.nav-item.active {
+  color: #00D4AA;
+}
+
+.nav-icon {
+  font-size: 20px;
+}

@@ -1,0 +1,152 @@
+.draw-container {
+  min-height: 100vh;
+  background-color: #0D0D0D;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.draw-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.draw-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.back-btn {
+  font-size: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.draw-content {
+  overflow-x: auto;
+}
+
+.tournament-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00D4AA;
+  text-align: center;
+  margin: 0 0 24px;
+}
+
+.loading {
+  text-align: center;
+  color: #6A6A6A;
+  padding: 40px;
+}
+
+.empty-state {
+  background: #1A1A1A;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+}
+
+.empty-state p {
+  color: #9A9A9A;
+  margin: 0;
+  font-size: 16px;
+}
+
+.empty-hint {
+  color: #6A6A6A !important;
+  font-size: 14px !important;
+  margin-top: 8px !important;
+}
+
+.brackets-container {
+  display: flex;
+  gap: 24px;
+  padding: 8px;
+}
+
+.round-column {
+  min-width: 180px;
+}
+
+.round-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 0 16px;
+  padding: 8px;
+  background: #1A1A1A;
+  border-radius: 8px;
+}
+
+.round-matches {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bracket-match {
+  background: #1A1A1A;
+  border-radius: 8px;
+  padding: 12px;
+  border-left: 3px solid #3A3A3A;
+}
+
+.bracket-match.status-active {
+  border-left-color: #00D4AA;
+}
+
+.bracket-match.status-completed {
+  border-left-color: #00D4AA;
+}
+
+.bracket-match.status-pending {
+  border-left-color: #FF9800;
+}
+
+.match-player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.match-player.winner .player-name {
+  color: #00D4AA;
+  font-weight: 600;
+}
+
+.player-name {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.winner-badge {
+  color: #00D4AA;
+  font-size: 12px;
+}
+
+.match-score {
+  font-size: 12px;
+  color: #6A6A6A;
+  text-align: center;
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px solid #2A2A2A;
+}
+
+.status-scheduled { border-left-color: #6A6A6A; }
+.status-active { border-left-color: #00D4AA; }
+.status-pending { border-left-color: #FF9800; }
+.status-completed { border-left-color: #00D4AA; }
+.status-cancelled { border-left-color: #FF5252; }
+.status-disputed { border-left-color: #FF9800; }
