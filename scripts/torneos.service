@@ -1,0 +1,15 @@
+[Unit]
+Description=Torneos Tennis Manager
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/torneos
+ExecStart=/home/pi/torneos/scripts/start.sh
+ExecStop=/home/pi/torneos/scripts/stop.sh
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

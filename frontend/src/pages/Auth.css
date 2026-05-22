@@ -135,8 +135,29 @@
   transition: background 0.2s;
 }
 
-.btn-google:hover {
+.btn-google:hover:not(:disabled) {
   background: #F0F0F0;
+}
+
+.btn-google:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #E0E0E0;
+}
+
+.btn-google {
+  position: relative;
+}
+
+.wip-badge {
+  position: absolute;
+  right: 12px;
+  background: #FF9800;
+  color: #0D0D0D;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
 }
 
 .checkbox-terms {
